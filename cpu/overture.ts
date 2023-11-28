@@ -47,7 +47,7 @@ export function begin() {
 export function calc(op: OP, lhs: number | Reg = Reg.Lhs, rhs: number | Reg = Reg.Rhs, out: Reg = Reg.Out) {
 	mov(Reg.Lhs, lhs);
 	mov(Reg.Rhs, rhs);
-	push(64 | op, `calc()`);
+	push(64 | op, `calc-` + OP[op]);
 	mov(out, Reg.Out);
 }
 export function makeCalc(op: OP) {

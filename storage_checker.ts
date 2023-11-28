@@ -1,4 +1,4 @@
-import * as cpu from "./overture";
+import * as cpu from "./cpu/overture";
 
 const EST = cpu.Reg.T0;
 
