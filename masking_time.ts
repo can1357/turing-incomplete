@@ -1,4 +1,4 @@
-import * as cpu from "./overture";
+import * as cpu from "./cpu/overture";
 
 cpu.load(cpu.Reg.Rhs, 3);
 
